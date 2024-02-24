@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %}Add User{% endblock %} {% block
+content %}
+<h1>Add User</h1>
+<form method="post">
+  <input
+    type="text"
+    name="username"
+    id="username"
+    class="form-control"
+    placeholder="Input username"
+  /><br />
+  <textarea
+    name="balance"
+    id="balance"
+    class="form-control"
+    placeholder="Input balance"
+  ></textarea>
+  <input type="submit" class="btn btn-success" /><br />
+</form>
+{% endblock %}

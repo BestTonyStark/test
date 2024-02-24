@@ -1,0 +1,20 @@
+{% extends "base.html" %} {% block title %}Update User balance{% endblock %} {%
+block content %}
+<h1>Update User balance</h1>
+<p>
+  Как это работает? Вы вводите название города с маленькой буквы(на английском
+  языке), а потом в зависимости от знака и модуля температуры в этом городе,
+  баланс пользоваетеля изменяется <br />
+</p>
+
+<form method="post">
+  <input
+    type="text"
+    name="city"
+    id="city"
+    class="form-control"
+    placeholder="Input city with a small letter"
+  /><br />
+  <input type="submit" class="btn btn-success" /><br />
+</form>
+{% endblock %}

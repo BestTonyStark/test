@@ -1,0 +1,14 @@
+{% extends "base.html" %} {% block title %}All users{% endblock %} {% block
+content %} {% for user in users %}
+<div>
+  <h4>
+    Username: {{ user.username }} <br />
+    Balance: {{ user.balance }}
+  </h4>
+</div>
+<a class="btn btn-danger" href="/delete/{{ user.id }}">Delete</a>
+<a class="btn btn-warning" href="/update/{{ user.id }}">Update</a>
+<a class="btn btn-warning" href="/temp/{{ user.id }}"
+  >Add temperature to the balance</a
+>
+{% endfor %} {% endblock %}
